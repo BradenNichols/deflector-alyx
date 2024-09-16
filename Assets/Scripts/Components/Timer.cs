@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 
     public bool setOnce = false;
     public bool resetTimer = false;
+    public bool doNotSetLabel = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,8 @@ public class Timer : MonoBehaviour
             return;
 
         GlobalGame.Instance.timer += Time.deltaTime;
-        UpdateText();
+
+        if (!doNotSetLabel)
+            UpdateText();
     }
 }

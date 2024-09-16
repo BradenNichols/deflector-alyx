@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 370139251145551747}
   - component: {fileID: 4297397077062820205}
   - component: {fileID: 8064836455267909071}
+  - component: {fileID: 7343177865666389370}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -408,6 +409,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   setOnce: 0
   resetTimer: 0
+  doNotSetLabel: 0
+--- !u!114 &7343177865666389370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268100366949127936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9973232b51b01914d9bcb50431a614f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialTimer: 5
+  timeAddPerDeflect: 0.5
 --- !u!1 &7020995516559647724
 GameObject:
   m_ObjectHideFlags: 0
