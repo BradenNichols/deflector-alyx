@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Melee : MonoBehaviour
@@ -20,6 +21,7 @@ public class Melee : MonoBehaviour
     private Transform baseTransform;
     private BoxCollider2D collide;
     private SpriteRenderer render;
+    public Light2D light;
 
     // Start is called before the first frame update
     void Start()
@@ -77,6 +79,7 @@ public class Melee : MonoBehaviour
         isAttacking = true;
         render.enabled = true;
         collide.enabled = true;
+        light.enabled = true;
 
         swingSound.Play();
 
@@ -91,6 +94,7 @@ public class Melee : MonoBehaviour
         isAttacking = false;
         render.enabled = false;
         collide.enabled = false;
+        light.enabled = false;
 
         baseTransform.rotation = new Quaternion(0, 0, 0, 0);
     }
