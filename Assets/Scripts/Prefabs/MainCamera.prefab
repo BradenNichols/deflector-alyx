@@ -422,8 +422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9973232b51b01914d9bcb50431a614f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialTimer: 5
-  timeAddPerDeflect: 0.5
+  playerStats: {fileID: 0}
+  initialTimer: 6
+  timeAddPerDeflect: 2
+  timer: 0
 --- !u!1 &7020995516559647724
 GameObject:
   m_ObjectHideFlags: 0

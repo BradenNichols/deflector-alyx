@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Diagnostics.Tracing;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -14,6 +15,9 @@ public class BulletScript : MonoBehaviour
     private BoxCollider2D myCollider;
     private SpriteRenderer mySprite;
     private Rigidbody2D myBody;
+
+    [SerializeField]
+    private CountdownTimer countdownTimer;
 
     public Vector2 bulletDirection;
     public Vector3 bulletOffset;
@@ -69,6 +73,9 @@ public class BulletScript : MonoBehaviour
     {
         shouldHitPlayers = false;
         bulletDirection *= -1;
+
+        if (countdownTimer)
+            countdownTimer.timer += countdownTimer.timeAddPerDeflect;
 
         timeSlow.AddTime(0.35f);
         StartCoroutine(WaitUntilTimeScale());

@@ -342,9 +342,9 @@ MonoBehaviour:
   swingDamage: 1
   deflectDamage: 3
   swingAngle: 110
-  deflectSound: {fileID: 0}
+  deflectSound: {fileID: 8481839275699066951}
   swingSound: {fileID: 8992727255973237475}
-  light: {fileID: 0}
+  light: {fileID: 1509598554199376722}
 --- !u!61 &3970835153091019088
 BoxCollider2D:
   m_ObjectHideFlags: 0
