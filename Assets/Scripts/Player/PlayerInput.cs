@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInput : MonoBehaviour
 {
     private Stats myStats;
     private Melee myWeapon;
+    public GameObject pauseMenu;
+    public bool paused;
 
     void Start()
     {
@@ -17,5 +20,19 @@ public class PlayerInput : MonoBehaviour
             myWeapon.Attack();
         if (Input.GetKeyDown(KeyCode.R))
             myStats.Kill();
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            paused = !paused;
+            if(!paused)
+            {
+                Time.timeScale = 0;
+                pauseMenu.SetActive(true);
+            } else
+            {
+                Time.timeScale = 1;
+                pauseMenu.SetActive(false);
+            }
+
+        }
     }
 }
