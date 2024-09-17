@@ -16,9 +16,9 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !paused)
             myWeapon.Attack();
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && !paused)
             myStats.Kill();
         if(Input.GetKeyDown(KeyCode.Escape))
         {

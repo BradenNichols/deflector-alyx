@@ -73,7 +73,7 @@ public class Melee : MonoBehaviour
 
     public bool Attack()
     {
-        if (canAttack == false || isAttacking == true || myStats.isDead == true)
+        if (canAttack == false || isAttacking == true || myStats.isDead == true || myStats.gameObject.GetComponent<PlayerInput>().paused == true) 
             return false;
 
         isAttacking = true;

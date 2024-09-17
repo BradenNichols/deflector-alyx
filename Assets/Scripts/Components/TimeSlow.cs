@@ -39,7 +39,8 @@ public class TimeSlow : MonoBehaviour
         {
             myCamera.backgroundColor = slowColor;
             Time.timeScale = slowSpeed;
-        } else
+        }
+        else if (Time.timeScale == slowSpeed)
         {
             myCamera.backgroundColor = normalColor;
             Time.timeScale = 1f;

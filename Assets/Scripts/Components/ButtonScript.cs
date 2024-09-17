@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
-    public GameObject pauseMenu;
     public void Quit()
     {
         Application.Quit();
     }
     public void Continue()
     {
-        //input.paused = false;
+        gameObject.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void MainMenu()
     {
