@@ -23,6 +23,7 @@ public class BulletScript : MonoBehaviour
     public Vector2 bulletDirection;
     public Vector3 bulletOffset;
     public Light2D sun;
+    public ParticleSystem sparks;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class BulletScript : MonoBehaviour
     // Deflect
     void Deflect()
     {
+        sparks.Play();
         sun.intensity = 0.75f;
         shouldHitPlayers = false;
         bulletDirection *= -1;
