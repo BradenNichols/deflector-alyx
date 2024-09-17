@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Diagnostics.Tracing;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -21,6 +22,7 @@ public class BulletScript : MonoBehaviour
 
     public Vector2 bulletDirection;
     public Vector3 bulletOffset;
+    public Light2D sun;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +73,7 @@ public class BulletScript : MonoBehaviour
     // Deflect
     void Deflect()
     {
+        sun.intensity = 0.75f;
         shouldHitPlayers = false;
         bulletDirection *= -1;
 
@@ -94,6 +97,7 @@ public class BulletScript : MonoBehaviour
     {
         yield return new WaitUntil(() => Time.timeScale == 1);
         bulletDirection = GetMouseDirection();
+        sun.intensity = 0.05f;
     }
 
     // Update is called once per frame
