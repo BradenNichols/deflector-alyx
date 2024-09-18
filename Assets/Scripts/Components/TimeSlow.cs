@@ -23,17 +23,14 @@ public class TimeSlow : MonoBehaviour
         timeAmount += length;
 
         if (timeAmount > 0)
-        {
             Time.timeScale = slowSpeed;
-        }
     }
 
     void Update()
     {
-        if (timeAmount > 0)
-        {
-            timeAmount = Mathf.Clamp(timeAmount - (Time.deltaTime / slowSpeed), 0, timeAmount);
-        }
+        if (Time.timeScale == 0) return;
+
+        timeAmount = Mathf.Clamp(timeAmount - (Time.deltaTime / slowSpeed), 0, timeAmount);
 
         if (timeAmount > 0)
         {
