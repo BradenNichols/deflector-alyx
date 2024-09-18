@@ -1505,6 +1505,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212169680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5780746853413755129, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+  m_PrefabInstance: {fileID: 1640556746}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b841e3f46add740af446aaa8c05cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1224315020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -1729,7 +1740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32b9733d225df7409b48c3f19e52c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameControl: {fileID: 0}
+  gameControl: {fileID: 1212169680}
   isActive: 1
   sceneName: Level2
   setDifficulty: 
@@ -3628,6 +3639,14 @@ PrefabInstance:
     - target: {fileID: 7498282332032997213, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
       propertyPath: m_Name
       value: THE SUN
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498282332032997213, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498282332032997214, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498282332032997214, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
       propertyPath: m_Intensity
