@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
+    public PlayerInput input;
     public void Quit()
     {
         Application.Quit();
@@ -12,6 +13,7 @@ public class ButtonScript : MonoBehaviour
     public void Continue()
     {
         gameObject.SetActive(false);
+        input.paused = false;
         Time.timeScale = 1.0f;
     }
     public void MainMenu()

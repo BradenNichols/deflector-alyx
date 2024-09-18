@@ -16,13 +16,12 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !paused)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.timeScale != 0)
             myWeapon.Attack();
-        if (Input.GetKeyDown(KeyCode.R) && !paused)
+        if (Input.GetKeyDown(KeyCode.R) && Time.timeScale != 0)
             myStats.Kill();
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            paused = !paused;
             if(!paused)
             {
                 Time.timeScale = 0;
@@ -33,6 +32,7 @@ public class PlayerInput : MonoBehaviour
                 pauseMenu.SetActive(false);
             }
 
+            paused = !paused;
         }
     }
 }
