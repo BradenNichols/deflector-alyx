@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameControl: {fileID: 288426464}
   isActive: 1
-  sceneName: Level2
+  sceneName: LevelWin
   setDifficulty: 
 --- !u!50 &1412146587
 Rigidbody2D:
