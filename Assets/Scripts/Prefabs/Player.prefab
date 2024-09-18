@@ -574,8 +574,8 @@ MonoBehaviour:
   maxSpeed: 2.5
   jump: 32
   slam: 304
-  slamForce: 8
-  featherForce: 0
+  slamForce: 15
+  featherForce: 0.7
   jumpForce: 9
   defaultGravity: 1
   canFeather: 1
