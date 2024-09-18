@@ -2248,7 +2248,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1354709485811481419, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_Name
-      value: PistolBullet (1)
+      value: PistolBullet
       objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481420, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: sun
@@ -2627,6 +2627,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5776067007824155894, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776067007824155894, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776067007824155894, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.5377358
+      objectReference: {fileID: 0}
     - target: {fileID: 5780746853413755078, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_RootOrder
       value: 0

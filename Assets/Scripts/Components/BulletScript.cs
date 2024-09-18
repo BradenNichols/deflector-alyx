@@ -10,6 +10,7 @@ public class BulletScript : MonoBehaviour
     public int bulletSpeed = 1;
     public int bulletDamage = 5;
     public bool shouldHitPlayers = true;
+    public float sunStart;
 
     public TimeSlow timeSlow;
 
@@ -75,6 +76,7 @@ public class BulletScript : MonoBehaviour
     void Deflect()
     {
         sparks.Play();
+        sunStart = sun.intensity;
         sun.intensity = 0.75f;
         shouldHitPlayers = false;
         bulletDirection *= -1;
@@ -99,7 +101,7 @@ public class BulletScript : MonoBehaviour
     {
         yield return new WaitUntil(() => Time.timeScale == 1);
         bulletDirection = GetMouseDirection();
-        sun.intensity = 0.05f;
+        sun.intensity = sunStart;
     }
 
     // Update is called once per frame
