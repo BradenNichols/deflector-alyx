@@ -4,57 +4,71 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
-    private Text myText;
+    // References
+    private Image image;
+    private RectTransform rectTransform;
+
+    [SerializeField]
+    private Image background;
 
     [SerializeField]
     private Stats playerStats;
 
+    // Public Variables
+
     public float initialTimer = 5;
     public float timeAddPerDeflect = 0.5f;
+    public Color addColor;
+
+    // Private Variables
 
     [HideInInspector]
     public float timer = 0;
 
-    public Color addColor;
-
     private Color baseColor;
     private float colorTime = 0;
+    private bool isActive = false;
+    private Vector3 baseScale;
 
     // Start is called before the first frame update
     void Start()
     {
-        myText = GetComponent<Text>();
+        image = GetComponent<Image>();
+        rectTransform = GetComponent<RectTransform>();
 
-        baseColor = myText.color;
+        baseScale = rectTransform.localScale;
+        baseColor = image.color;
         timer = initialTimer;
-
-        UpdateText();
     }
 
-    void UpdateText()
+    void UpdateBar()
     {
-        string minutes = Mathf.Floor(timer / 60).ToString("00");
-        string seconds = (timer % 60).ToString("F2");
+        background.enabled = true;
+        image.enabled = true;
 
-        if (seconds.Length == 4)
-            seconds = "0" + seconds;
-
-        myText.text = minutes + ":" + seconds;
+        rectTransform.localScale = new Vector3(baseScale.x * (timer / initialTimer), baseScale.y, baseScale.z);
     }
-
 
     // Public
 
+    public void OnDeflect()
+    {
+        if (!isActive)
+            isActive = true;
+
+        AddTime(timeAddPerDeflect);
+    }
+
     public void AddTime(float time)
     {
-        timer += time;
+        timer = Mathf.Clamp(timer + time, timer, initialTimer);
         colorTime += 0.2f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerStats.isDead) return;
+        if (playerStats.isDead || !isActive) return;
 
         timer -= Time.deltaTime;
 
@@ -62,16 +76,16 @@ public class CountdownTimer : MonoBehaviour
             colorTime = Mathf.Clamp(colorTime - Time.deltaTime, 0, colorTime);
 
         if (colorTime > 0 && timer > 0)
-            myText.color = addColor;
+            image.color = addColor;
         else
-            myText.color = baseColor;
+            image.color = baseColor;
 
         if (timer <= 0)
         {
             timer = 0;
             playerStats.Kill();
-        }    
+        }
 
-        UpdateText();
+        UpdateBar();
     }
 }

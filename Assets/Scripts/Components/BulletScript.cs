@@ -82,7 +82,7 @@ public class BulletScript : MonoBehaviour
         bulletDirection *= -1;
 
         if (countdownTimer)
-            countdownTimer.AddTime(countdownTimer.timeAddPerDeflect);
+            countdownTimer.OnDeflect();
 
         timeSlow.AddTime(0.35f);
         StartCoroutine(WaitUntilTimeScale());
