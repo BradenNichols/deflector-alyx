@@ -18,6 +18,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void MainMenu()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("TitleScreen");
     }
 }
