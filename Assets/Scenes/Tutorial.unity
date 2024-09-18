@@ -2107,6 +2107,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 3970835153037177364}
+    - target: {fileID: 8064836455267909071, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: resetTimer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
