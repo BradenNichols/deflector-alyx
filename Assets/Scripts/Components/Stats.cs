@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class Stats : MonoBehaviour
@@ -10,6 +12,7 @@ public class Stats : MonoBehaviour
     public bool isDead = false;
     public bool isPlayer;
     public bool dontSetColor = false;
+    public bool oneHP = false;
 
     public Melee meleeWeapon;
     public Gun gunWeapon;
@@ -58,6 +61,7 @@ public class Stats : MonoBehaviour
         } else if (health == 1)
         {
             myRender.color = new Color(1, 0.2f, 0);
+            if(isPlayer) oneHP = true;
         }
     }
 
@@ -108,5 +112,27 @@ public class Stats : MonoBehaviour
         }
 
         StartCoroutine(gameControl.LoseGame());
+    }
+    void Update()
+    {
+        if (oneHP) StartCoroutine(FlashingLights());
+    }
+    IEnumerator FlashingLights()
+    {
+        oneHP = false;
+        for (float i = 0; i < 1; i += Time.deltaTime)
+        {
+            yield return null;
+            GetComponent<Light2D>().intensity = Mathf.Pow(Mathf.Sin(i * Mathf.PI * 3), 2) * 0.25f;
+        }
+
+        //Console.ReadLine("ewa");
+        //GetComponent<Light2D>().intensity = Mathf.Lerp(0, 0.5f, .5f);
+        //Console.ReadLine("ewaa");
+        //yield return new WaitForSecondsRealtime(.6f);
+        //Console.ReadLine("ah");
+        //GetComponent<Light2D>().intensity = Mathf.Lerp(.5f, 0, .5f);
+        //yield return new WaitForSecondsRealtime(.5f);
+        //oneHP = true;  
     }
 }
