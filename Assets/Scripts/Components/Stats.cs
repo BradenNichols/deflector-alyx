@@ -24,6 +24,7 @@ public class Stats : MonoBehaviour
 
     private AudioSource deathSound;
     private Color baseColor;
+    public AudioSource yeowch;
 
     void Start()
     {
@@ -71,6 +72,7 @@ public class Stats : MonoBehaviour
             return;
 
         health -= Mathf.Clamp(dmg - defense, 0, dmg);
+        yeowch.Play();
         SetHPColor();
 
         if (health <= 0)

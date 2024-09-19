@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 5768935075279934497}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5768935074427136508
 SpriteRenderer:
@@ -153,6 +153,7 @@ MonoBehaviour:
   isDead: 0
   isPlayer: 0
   dontSetColor: 0
+  oneHP: 0
   meleeWeapon: {fileID: 0}
   gunWeapon: {fileID: 5768935075402103783}
 --- !u!114 &5768935074427136510
@@ -371,7 +372,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6b5a2246b37bb084bad1abf617321672, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ee78e4ac0b3355e47bca080c35ecd559, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.094
   m_Pitch: 1

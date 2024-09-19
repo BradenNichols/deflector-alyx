@@ -25,6 +25,7 @@ public class BulletScript : MonoBehaviour
     public Vector3 bulletOffset;
     public Light2D sun;
     public ParticleSystem sparks;
+    public AudioSource sching;
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +61,6 @@ public class BulletScript : MonoBehaviour
             if (hitMeleeWeapon)
             {
                 bulletDamage = hitMeleeWeapon.deflectDamage;
-                hitMeleeWeapon.deflectSound.Play();
 
                 Deflect();
                 return;
@@ -76,6 +76,7 @@ public class BulletScript : MonoBehaviour
     void Deflect()
     {
         sparks.Play();
+        sching.Play();
         sunStart = sun.intensity;
         sun.intensity = 0.75f;
         shouldHitPlayers = false;

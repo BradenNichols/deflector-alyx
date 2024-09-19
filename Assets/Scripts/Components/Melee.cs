@@ -15,7 +15,6 @@ public class Melee : MonoBehaviour
     private bool isAttacking = false;
 
     public AudioSource deflectSound;
-    public AudioSource swingSound;
 
     private Stats myStats;
     private Transform baseTransform;
@@ -81,7 +80,6 @@ public class Melee : MonoBehaviour
         collide.enabled = true;
         light.enabled = true;
 
-        swingSound.Play();
 
         return true;
     }
