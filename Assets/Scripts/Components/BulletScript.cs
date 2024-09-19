@@ -37,7 +37,7 @@ public class BulletScript : MonoBehaviour
         myCollider.enabled = true;
 
         transform.Translate(bulletOffset, Space.Self);
-        Destroy(gameObject, 6.0f);
+        Destroy(gameObject, 4.5f);
     }
 
     // Hit Detect

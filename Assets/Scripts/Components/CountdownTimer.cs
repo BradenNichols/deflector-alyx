@@ -5,11 +5,14 @@ using UnityEngine.UI;
 public class CountdownTimer : MonoBehaviour
 {
     // References
+    [SerializeField]
+    private GameObject countdownBar;
+    [SerializeField]
+    private Image countdownIcon;
+
     private Image image;
     private RectTransform rectTransform;
-
-    [SerializeField]
-    private Image background;
+    private Canvas canvas;
 
     [SerializeField]
     private Stats playerStats;
@@ -18,34 +21,37 @@ public class CountdownTimer : MonoBehaviour
 
     public float initialTimer = 5;
     public float timeAddPerDeflect = 0.5f;
-    public Color addColor;
+    public Color barAddColor;
+    public Color iconAddColor;
 
     // Private Variables
 
     [HideInInspector]
     public float timer = 0;
+    public bool isActive = false;
 
     private Color baseColor;
+    private Color baseIconColor;
+
     private float colorTime = 0;
-    private bool isActive = false;
     private Vector3 baseScale;
 
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<Image>();
-        rectTransform = GetComponent<RectTransform>();
+        image = countdownBar.GetComponent<Image>();
+        rectTransform = countdownBar.GetComponent<RectTransform>();
+        canvas = GetComponent<Canvas>();
 
         baseScale = rectTransform.localScale;
         baseColor = image.color;
+        baseIconColor = countdownIcon.color; 
         timer = initialTimer;
     }
 
     void UpdateBar()
     {
-        background.enabled = true;
-        image.enabled = true;
-
+        canvas.enabled = isActive;
         rectTransform.localScale = new Vector3(baseScale.x * (timer / initialTimer), baseScale.y, baseScale.z);
     }
 
@@ -62,7 +68,7 @@ public class CountdownTimer : MonoBehaviour
     public void AddTime(float time)
     {
         timer = Mathf.Clamp(timer + time, timer, initialTimer);
-        colorTime += 0.2f;
+        colorTime += 0.14f;
     }
 
     // Update is called once per frame
@@ -76,9 +82,18 @@ public class CountdownTimer : MonoBehaviour
             colorTime = Mathf.Clamp(colorTime - Time.deltaTime, 0, colorTime);
 
         if (colorTime > 0 && timer > 0)
-            image.color = addColor;
+        {
+            image.color = barAddColor;
+            countdownIcon.color = iconAddColor;
+            countdownIcon.transform.localScale = new Vector3(1.17f, 1.17f, 1.17f);
+        }
         else
-            image.color = baseColor;
+        {
+            float redRatio = Mathf.Clamp((timer + 1) / (initialTimer / 1.8f), 0.3f, 1);
+            image.color = new Color(baseColor.r * redRatio, baseColor.g, baseColor.b, baseColor.a);
+            countdownIcon.color = baseIconColor;
+            countdownIcon.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
 
         if (timer <= 0)
         {
