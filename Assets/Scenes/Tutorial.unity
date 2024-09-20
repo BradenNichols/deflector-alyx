@@ -2165,6 +2165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: THE SUN
       objectReference: {fileID: 0}
+    - target: {fileID: 7498282332032997214, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
+      propertyPath: m_Intensity
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 7498282332032997215, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -2470,14 +2474,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: slamForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: featherForce
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: pauseMenu
       value: 
