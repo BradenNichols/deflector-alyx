@@ -72,7 +72,14 @@ public class Stats : MonoBehaviour
             return;
 
         health -= Mathf.Clamp(dmg - defense, 0, dmg);
-        yeowch.Play();
+        try
+        {
+            yeowch.Play();
+        }
+        catch (Exception)
+        {
+
+        }
         SetHPColor();
 
         if (health <= 0)

@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
     public bool isShooting = false;
 
     private float bulletCooldown = 0;
-    private AudioSource shootSound;
+    public AudioSource shootSound;
 
     void Start()
     {

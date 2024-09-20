@@ -156,6 +156,7 @@ MonoBehaviour:
   oneHP: 0
   meleeWeapon: {fileID: 0}
   gunWeapon: {fileID: 5768935075402103783}
+  yeowch: {fileID: 0}
 --- !u!114 &5768935074427136510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +363,7 @@ MonoBehaviour:
   minTimeToShoot: 0.1
   maxTimeToShoot: 0.5
   isShooting: 0
+  shootSound: {fileID: 0}
 --- !u!82 &394212399368850091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -374,7 +376,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ee78e4ac0b3355e47bca080c35ecd559, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.094
+  m_Volume: 0.312
   m_Pitch: 1
   Loop: 0
   Mute: 0
