@@ -478,10 +478,10 @@ MonoBehaviour:
   maxSpeed: 2.5
   jump: 32
   slam: 304
-  slamForce: 15
-  featherForce: 0.7
+  slamForce: 20
+  featherForce: 0.75
   jumpForce: 9
-  defaultGravity: 1
+  defaultGravity: 2
   canFeather: 1
 --- !u!50 &3970835153302471568
 Rigidbody2D:
