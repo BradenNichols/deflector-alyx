@@ -6,6 +6,7 @@ public class Gun : MonoBehaviour
     public float fireTime = 1;
     public GameObject Bullet;
     public Vector3 bulletOffset;
+    public int bulletspeed = 10;
 
     public float minTimeToShoot = 0.1f;
     public float maxTimeToShoot = 0.5f;
@@ -36,7 +37,7 @@ public class Gun : MonoBehaviour
 
         GameObject newBullet = Instantiate(Bullet, transform.position, transform.parent.rotation);
         BulletScript bulletScript = newBullet.GetComponent<BulletScript>();
-
+        bulletScript.bulletSpeed = bulletspeed;
         if (transform.parent.parent.localScale.x == -1)
         {
             bulletScript.bulletOffset = -bulletOffset;

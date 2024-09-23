@@ -17,6 +17,9 @@ public class Stats : MonoBehaviour
     public Melee meleeWeapon;
     public Gun gunWeapon;
 
+    [SerializeField]
+    private CountdownTimer countdownTimer;
+
     private Rigidbody2D myBody;
     private SpriteRenderer myRender;
     private GameObject mainCamera;
@@ -72,6 +75,10 @@ public class Stats : MonoBehaviour
             return;
 
         health -= Mathf.Clamp(dmg - defense, 0, dmg);
+        if(isPlayer)
+        {
+            countdownTimer.OnDamage();
+        }
         try
         {
             yeowch.Play();

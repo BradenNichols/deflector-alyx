@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelWin.unity
     guid: 35a216880af44534c8abe35d78cb45ba
   - enabled: 1
-    path: Assets/Scenes/LevelTimed1.unity
+    path: Assets/Scenes/Level4.unity
     guid: f880591c3ced744408054b6a807c6b2a
   m_configObjects: {}

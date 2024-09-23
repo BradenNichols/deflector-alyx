@@ -360,6 +360,7 @@ MonoBehaviour:
   fireTime: 1
   Bullet: {fileID: 0}
   bulletOffset: {x: -0.6, y: 0, z: 0}
+  bulletspeed: 10
   minTimeToShoot: 0.1
   maxTimeToShoot: 0.5
   isShooting: 0

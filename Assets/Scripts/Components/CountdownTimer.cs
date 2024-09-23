@@ -19,8 +19,8 @@ public class CountdownTimer : MonoBehaviour
 
     // Public Variables
 
-    public float initialTimer = 5;
-    public float timeAddPerDeflect = 0.5f;
+    public float initialTimer = 10;
+    public float timeAddPerDeflect = 0.75f;
     public Color barAddColor;
     public Color iconAddColor;
 
@@ -65,10 +65,16 @@ public class CountdownTimer : MonoBehaviour
         AddTime(timeAddPerDeflect);
     }
 
+    public void OnDamage ()
+    {
+        AddTime(-.5f);
+    }
     public void AddTime(float time)
     {
-        timer = Mathf.Clamp(timer + time, timer, initialTimer);
-        colorTime += 0.14f;
+        timer = Mathf.Clamp(timer + time, 0, initialTimer);
+
+        if (time > 0)
+            colorTime += 0.14f;
     }
 
     // Update is called once per frame
