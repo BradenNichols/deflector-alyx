@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -188,8 +192,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -203,6 +211,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -217,6 +229,10 @@ PrefabInstance:
     - target: {fileID: 5768935074427136497, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Name
       value: Enemy (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
@@ -271,8 +287,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -286,6 +306,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -1378,6 +1402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1431,8 +1459,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1446,6 +1478,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -2285,6 +2321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -2338,8 +2378,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2353,6 +2397,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -2605,6 +2653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -2658,8 +2710,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2673,6 +2729,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -3988,6 +4048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -4041,8 +4105,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4056,6 +4124,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -4261,6 +4333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -4314,8 +4390,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4329,6 +4409,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -4343,6 +4427,10 @@ PrefabInstance:
     - target: {fileID: 5768935074427136497, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Name
       value: Enemy (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136499, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_RootOrder
@@ -4397,8 +4485,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1011915850}
     - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: hasSeenPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxDetectionRange
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4412,6 +4504,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1337647955}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletspeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -4876,11 +4972,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 112.1
+      value: 38.6
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.1
+      value: -22.9
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.z
