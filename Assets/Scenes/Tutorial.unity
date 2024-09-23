@@ -2059,6 +2059,10 @@ PrefabInstance:
       propertyPath: resetTimer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8603c6101a12a5c479807dc272cee72f, type: 3}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 

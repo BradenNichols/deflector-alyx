@@ -1866,6 +1866,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1435842292087395699, guid: 291f1a0a14e52eb4895be7ceb3d713cc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b82dd1c489d8aa74db04af64652291c7, type: 3}
     - target: {fileID: 3710653822860322489, guid: 291f1a0a14e52eb4895be7ceb3d713cc, type: 3}
       propertyPath: m_Name
       value: GlobalGame
@@ -2638,6 +2642,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b82dd1c489d8aa74db04af64652291c7, type: 3}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 

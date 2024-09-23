@@ -3360,6 +3360,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2364c293b1140ba46ba0d72f3f9424e5, type: 3}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 
@@ -3428,17 +3432,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8b841e3f46add740af446aaa8c05cac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1636467296 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7343177865666389370, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-  m_PrefabInstance: {fileID: 1636467294}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9973232b51b01914d9bcb50431a614f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1636467297 stripped
@@ -4857,7 +4850,7 @@ PrefabInstance:
     - target: {fileID: 1354709485811481420, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: countdownTimer
       value: 
-      objectReference: {fileID: 1636467296}
+      objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481423, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_RootOrder
       value: 3
