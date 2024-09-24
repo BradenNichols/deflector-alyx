@@ -451,7 +451,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b418d9290982e54eac9f7d9437ce229, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -521,7 +521,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.77, y: 2.41}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -550,6 +550,7 @@ MonoBehaviour:
   oneHP: 0
   meleeWeapon: {fileID: 3970835153091019089}
   gunWeapon: {fileID: 0}
+  countdownTimer: {fileID: 0}
   yeowch: {fileID: 5896122753641105238}
 --- !u!114 &3970835153302471573
 MonoBehaviour:
