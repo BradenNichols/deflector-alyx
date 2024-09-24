@@ -12,6 +12,6 @@ public class HueShift : MonoBehaviour
 
     void Update()
     {
-        rend.color = Color.HSVToRGB(Mathf.PingPong(Time.time * Speed, 1), 1, 1);
+        rend.color = Color.HSVToRGB(Mathf.PingPong((Time.time + 2) * Speed, 1), 1, 1);
     }
 }
