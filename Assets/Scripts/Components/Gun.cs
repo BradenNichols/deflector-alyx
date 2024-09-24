@@ -39,20 +39,16 @@ public class Gun : MonoBehaviour
         BulletScript bulletScript = newBullet.GetComponent<BulletScript>();
 
         bulletScript.bulletSpeed = bulletspeed;
-        bulletScript.bulletOffset = bulletOffset;
-        bulletScript.bulletDirection = transform.right * -1;
 
-
-        if (transform.parent.parent.localScale.x == -1)
+        if (transform.parent.parent.localScale.x < 0)
         {
-            print("right");
             bulletScript.bulletOffset = -bulletOffset;
             bulletScript.bulletDirection = transform.right;
         }
         else
         {
-            print("left");
-            
+            bulletScript.bulletOffset = bulletOffset;
+            bulletScript.bulletDirection = transform.right * -1;
         }
 
         bulletScript.enabled = true;

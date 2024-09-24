@@ -47,23 +47,15 @@ public class EnemyAI : MonoBehaviour
             }
         } else
         {
-            //if (transform.localScale.x == -1)
-            //{
-                // Gun facing right (doesnt work)
-                //Debug.Log("right");
-               // weaponGrip.transform.right = -(weaponGrip.transform.position - targetTransform.position);
-            //}
-            //else
-            //{
-                // Gun facing left
-                //Debug.Log("left");
-                weaponGrip.transform.right = -(targetTransform.position - weaponGrip.transform.position);
-            //}
-
-            if (target.transform.position.x > transform.position.x)
+            if (target.transform.position.x > transform.position.x) // right
+            {
                 transform.localScale = new Vector3(-1, 1, 1);
-            else
+                weaponGrip.transform.right = -(weaponGrip.transform.position - targetTransform.position);
+            } else // left
+            {
                 transform.localScale = Vector3.one;
+                weaponGrip.transform.right = -(targetTransform.position - weaponGrip.transform.position);
+            }
 
             myGun.StartShooting();
         }
