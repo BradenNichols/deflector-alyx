@@ -657,6 +657,7 @@ MonoBehaviour:
   bulletOffset: {x: 0, y: 0, z: 0}
   sun: {fileID: 1658111439}
   sparks: {fileID: 82436032}
+  sching: {fileID: 0}
 --- !u!61 &1337647957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1458,14 +1459,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: slamForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: featherForce
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: pauseMenu
       value: 

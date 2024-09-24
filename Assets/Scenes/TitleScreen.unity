@@ -2322,18 +2322,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: slamForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: featherForce
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: defaultGravity
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_Enabled
       value: 0

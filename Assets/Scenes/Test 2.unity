@@ -530,18 +530,6 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 407114457}
-    - target: {fileID: 0}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
@@ -1318,14 +1306,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: slamForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153302471571, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: featherForce
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: pauseMenu
       value: 
