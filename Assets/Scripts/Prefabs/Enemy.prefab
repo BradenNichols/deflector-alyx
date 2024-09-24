@@ -156,6 +156,7 @@ MonoBehaviour:
   oneHP: 0
   meleeWeapon: {fileID: 0}
   gunWeapon: {fileID: 5768935075402103783}
+  countdownTimer: {fileID: 0}
   yeowch: {fileID: 0}
 --- !u!114 &5768935074427136510
 MonoBehaviour:
@@ -357,7 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canShoot: 1
-  fireTime: 1
+  fireTime: 0.9
   Bullet: {fileID: 0}
   bulletOffset: {x: -0.6, y: 0, z: 0}
   bulletspeed: 10

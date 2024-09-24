@@ -60,9 +60,8 @@ public class Stats : MonoBehaviour
             return;
 
         if (health >= 2)
-        {
             myRender.color = baseColor;
-        } else if (health == 1)
+        else if (health == 1)
         {
             myRender.color = new Color(1, 0.2f, 0);
             if(isPlayer) oneHP = true;
@@ -75,24 +74,17 @@ public class Stats : MonoBehaviour
             return;
 
         health -= Mathf.Clamp(dmg - defense, 0, dmg);
-        if(isPlayer)
-        {
-            countdownTimer.OnDamage();
-        }
-        try
-        {
-            yeowch.Play();
-        }
-        catch (Exception)
-        {
 
-        }
+        if(isPlayer && countdownTimer)
+            countdownTimer.OnDamage();
+
+        if (yeowch)
+            yeowch.Play();
+
         SetHPColor();
 
         if (health <= 0)
-        {
             Kill();
-        }
     }
 
     public void Kill()
@@ -106,12 +98,9 @@ public class Stats : MonoBehaviour
         myBody.simulated = false;
 
         if (isPlayer == true)
-        {
             StartCoroutine(DeathAnimation());
-        } else
-        {
+        else
             Destroy(gameObject);
-        }
     }
 
     private IEnumerator DeathAnimation()
