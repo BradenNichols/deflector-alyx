@@ -38,12 +38,13 @@ public class PlayerMovement : MonoBehaviour
         body2D.AddForce(new Vector2(Horizontal * (8000 * acceleration) * Time.deltaTime, 0));
 
         // Rotation for Weapons
-        if (Horizontal < 0)
+
+        if (!myStats.doNotRotate)
         {
-            transform.rotation = new Quaternion(0, 180, 0, 0);
-        } else if (Horizontal > 0)
-        {
-            transform.rotation = new Quaternion(0, 0, 0, 0);
+            if (Horizontal < 0)
+                transform.rotation = new Quaternion(0, 180, 0, 0);
+            else if (Horizontal > 0)
+                transform.rotation = new Quaternion(0, 0, 0, 0);
         }
 
         // Jump.

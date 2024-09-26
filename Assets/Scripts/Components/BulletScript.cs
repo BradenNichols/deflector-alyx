@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour
 {
     public int bulletSpeed = 1;
     public int bulletDamage = 5;
-    public bool shouldHitPlayers = true;
+    public bool shouldHitPlayers = true, deflecting = false;
     public float sunStart;
 
     public TimeSlow timeSlow;
@@ -52,18 +52,17 @@ public class BulletScript : MonoBehaviour
         if (hitStats)
         {
             if (hitStats.isPlayer != shouldHitPlayers || hitStats.isDead == true)
-            {
                 return;
-            }
 
             hitStats.TakeDamage(bulletDamage);
         }
-
-        Destroy(gameObject);
+        if(!deflecting) Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "moving") Destroy(gameObject);
+        if (deflecting) return;
+
         Melee hitMeleeWeapon = collision.gameObject.GetComponent<Melee>();
 
         if (hitMeleeWeapon)
@@ -74,13 +73,12 @@ public class BulletScript : MonoBehaviour
             Deflect();
             return;
         }
-
-        
     }
 
     // Deflect
     void Deflect()
     {
+        deflecting = true;
         sparks.Play();
         sching.Play();
         sunStart = sun.intensity;
@@ -109,6 +107,7 @@ public class BulletScript : MonoBehaviour
         yield return new WaitUntil(() => Time.timeScale == 1);
         bulletDirection = GetMouseDirection();
         sun.intensity = sunStart;
+        deflecting = false;
     }
 
     // Update is called once per frame

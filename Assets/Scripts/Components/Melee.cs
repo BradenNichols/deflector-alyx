@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Melee : MonoBehaviour
@@ -41,9 +42,7 @@ public class Melee : MonoBehaviour
     void Update()
     {
         if (myStats.isDead == true)
-        {
             StopAttack();
-        }
 
         if (isAttacking == true)
         {
@@ -65,9 +64,7 @@ public class Melee : MonoBehaviour
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
 
         if (isAttacking == true && hitStats != null && hitStats.isPlayer != myStats.isPlayer)
-        {
             hitStats.TakeDamage(swingDamage);
-        }
     }
 
     // Public
@@ -83,6 +80,13 @@ public class Melee : MonoBehaviour
         light.enabled = true;
 
         cooldown = .5f;
+        myStats.doNotRotate = true;
+
+        if (Input.mousePosition.x < Screen.width / 2)
+            transform.parent.parent.transform.rotation = new Quaternion(0, 180, 0, 0);
+        else
+            transform.parent.parent.transform.rotation = new Quaternion(0, 0, 0, 0);
+
         return true;
     }
 
@@ -95,6 +99,7 @@ public class Melee : MonoBehaviour
         render.enabled = false;
         collide.enabled = false;
         light.enabled = false;
+        myStats.doNotRotate = false;
 
         baseTransform.rotation = new Quaternion(0, 0, 0, 0);
     }

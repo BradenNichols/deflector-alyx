@@ -14,6 +14,9 @@ public class Stats : MonoBehaviour
     public bool dontSetColor = false;
     public bool oneHP = false;
 
+    [HideInInspector]
+    public bool doNotRotate = false;
+
     public Melee meleeWeapon;
     public Gun gunWeapon;
 
