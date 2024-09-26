@@ -57,7 +57,7 @@ public class Melee : MonoBehaviour
     }
 
     // Hit Detection
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         Stats ourStats = GetComponent<Stats>();
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
