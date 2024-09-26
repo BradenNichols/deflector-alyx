@@ -5,6 +5,9 @@ using UnityEngine;
 public class Clock : MonoBehaviour
 {
     public CountdownTimer CountdownTimer;
+    public Melee melee;
+    public float timer;
+
     Transform scale;
     void Start()
     {
@@ -14,7 +17,11 @@ public class Clock : MonoBehaviour
     {
         if(collision.name == "Player")
         {
+            CountdownTimer.initialTimer = timer;
             CountdownTimer.AddTime(CountdownTimer.initialTimer - CountdownTimer.timer);
+            
+            melee.canAttack = false;
+
             Destroy(gameObject);
         }
     }

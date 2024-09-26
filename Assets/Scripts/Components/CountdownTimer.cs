@@ -29,6 +29,7 @@ public class CountdownTimer : MonoBehaviour
     [HideInInspector]
     public float timer = 0;
     public bool isActive = false;
+    public float timerSpeed = 1;
 
     private Color baseColor;
     private Color baseIconColor;
@@ -82,7 +83,7 @@ public class CountdownTimer : MonoBehaviour
     {
         if (playerStats.isDead || !isActive) return;
 
-        timer -= Time.deltaTime;
+        timer -= (Time.deltaTime * timerSpeed);
 
         if (colorTime > 0)
             colorTime = Mathf.Clamp(colorTime - Time.deltaTime, 0, colorTime);
