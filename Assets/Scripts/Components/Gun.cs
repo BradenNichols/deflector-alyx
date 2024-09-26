@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Gun : MonoBehaviour
 {
@@ -13,12 +14,15 @@ public class Gun : MonoBehaviour
 
     public bool isShooting = false;
 
-    private float bulletCooldown = 0;
+    public float bulletCooldown = 0;
     public AudioSource shootSound;
+
+    private new Light2D light;
 
     void Start()
     {
         shootSound = GetComponent<AudioSource>();
+        light = GetComponent<Light2D>();
     }
 
     void FixedUpdate() // Shoot bullets every frame.
@@ -29,8 +33,14 @@ public class Gun : MonoBehaviour
         if (bulletCooldown > 0)
         {
             bulletCooldown -= Time.fixedDeltaTime;
+
+            if (bulletCooldown < 0.5f)
+                light.intensity += (Time.fixedDeltaTime * 12);
+
             return;
         }
+
+        light.intensity = 0;
 
         shootSound.Play();
         bulletCooldown = fireTime + Random.Range(minTimeToShoot, maxTimeToShoot);

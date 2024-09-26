@@ -44,6 +44,7 @@ public class EnemyAI : MonoBehaviour
             if (cast.transform == targetTransform)
             {
                 hasSeenPlayer = true;
+                myGun.bulletCooldown = 0.6f;
             }
         } else
         {
