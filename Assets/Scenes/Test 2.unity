@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32b9733d225df7409b48c3f19e52c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameControl: {fileID: 0}
+  gameControl: {fileID: 1859265436}
   isActive: 1
   sceneName: Tutorial
   setDifficulty: 
@@ -837,6 +837,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09a4dd969d25a224994a3ddcee8ba58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1859265436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5780746853413755129, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+  m_PrefabInstance: {fileID: 1225336188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b841e3f46add740af446aaa8c05cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2075215029
@@ -1260,11 +1271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.27
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.8
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471569, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_LocalPosition.z

@@ -3559,17 +3559,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1599473834}
     - target: {fileID: 3970835153091019089, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: swingAngle
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970835153091019089, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: swingSound
       value: 
       objectReference: {fileID: 1471114259}
-    - target: {fileID: 3970835153091019089, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: swingSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471532, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_Name
       value: Player

@@ -25,4 +25,22 @@ public class Portal : MonoBehaviour
             gameControl.WinLevel(sceneName);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isActive == false)
+            return;
+
+        Stats hitStats = collision.gameObject.GetComponentInParent<Stats>();
+
+            print(collision);
+        if (hitStats && hitStats.isPlayer == true && hitStats.isDead == false)
+        {
+            if (setDifficulty != "")
+            {
+                GlobalGame.Instance.difficulty = setDifficulty;
+            }
+            GlobalGame.Instance.portalSound.Play();
+            gameControl.WinLevel(sceneName);
+        }
+    }
 }

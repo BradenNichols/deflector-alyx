@@ -337,10 +337,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canAttack: 1
-  swingSpeed: 1
+  swingSpeed: 1.5
   swingDamage: 1
   deflectDamage: 3
-  swingAngle: 110
+  swingAngle: 120
+  cooldown: 0
   deflectSound: {fileID: 0}
   light: {fileID: 1509598554199376722}
 --- !u!61 &3970835153091019088
@@ -353,7 +354,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.21335328, y: 0.3986063}

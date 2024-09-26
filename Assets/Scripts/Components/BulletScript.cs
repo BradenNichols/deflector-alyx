@@ -56,16 +56,6 @@ public class BulletScript : MonoBehaviour
                 return;
             }
 
-            Melee hitMeleeWeapon = collision.collider.gameObject.GetComponent<Melee>();
-
-            if (hitMeleeWeapon)
-            {
-                bulletDamage = hitMeleeWeapon.deflectDamage;
-
-                Deflect();
-                return;
-            }
-
             hitStats.TakeDamage(bulletDamage);
         }
 
@@ -74,6 +64,18 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "moving") Destroy(gameObject);
+        Melee hitMeleeWeapon = collision.gameObject.GetComponent<Melee>();
+
+        if (hitMeleeWeapon)
+        {
+            bulletDamage = hitMeleeWeapon.deflectDamage;
+
+            hitMeleeWeapon.cooldown = 0;
+            Deflect();
+            return;
+        }
+
+        
     }
 
     // Deflect

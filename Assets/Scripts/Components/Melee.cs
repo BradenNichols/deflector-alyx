@@ -10,6 +10,7 @@ public class Melee : MonoBehaviour
     public int swingDamage = 1;
     public int deflectDamage = 3;
     public int swingAngle = 120; // At what angle will the swing stop.
+    public float cooldown = 0;
 
     private int baseSwingRotate = -360; // Per second
     private bool isAttacking = false;
@@ -20,7 +21,7 @@ public class Melee : MonoBehaviour
     private Transform baseTransform;
     private BoxCollider2D collide;
     private SpriteRenderer render;
-    public Light2D light;
+    public new Light2D light;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class Melee : MonoBehaviour
 
             baseTransform.Rotate(new Vector3(0, 0, (swingSpeed * (float) baseSwingRotate) * Time.deltaTime));
         }
+        cooldown = Mathf.Clamp(cooldown - Time.deltaTime, 0, cooldown);
     }
 
     // Hit Detection
@@ -72,7 +74,7 @@ public class Melee : MonoBehaviour
 
     public bool Attack()
     {
-        if (canAttack == false || isAttacking == true || myStats.isDead == true || myStats.gameObject.GetComponent<PlayerInput>().paused == true) 
+        if (canAttack == false || isAttacking == true || myStats.isDead == true || myStats.gameObject.GetComponent<PlayerInput>().paused == true || cooldown > 0) 
             return false;
 
         isAttacking = true;
@@ -80,7 +82,7 @@ public class Melee : MonoBehaviour
         collide.enabled = true;
         light.enabled = true;
 
-
+        cooldown = .5f;
         return true;
     }
 
