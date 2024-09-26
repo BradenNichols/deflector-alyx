@@ -43,7 +43,7 @@ public class GameControl : MonoBehaviour
             if (ratio <= 0.42f)
                 diedBG.color = new Color(0, 0, 0, ratio);
 
-            yield return new WaitForSecondsRealtime(0.01f);
+            yield return new WaitForSeconds(0.01f);
         }
 
         max = 150;
@@ -57,18 +57,15 @@ public class GameControl : MonoBehaviour
             youDied.color = new Color(ratio, ratio, ratio, 1);
             youDied.transform.localScale = baseSize * (1 + ((float)i / max) / 8);
 
-            yield return new WaitForSecondsRealtime(0.01f);
+            yield return new WaitForSeconds(0.01f);
         }
 
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSeconds(1.5f);
         deathSound.Stop();
 
         if (GlobalGame.Instance.difficulty == "Normal")
-        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-        } else if (GlobalGame.Instance.difficulty == "Insane")
-        {
+        else if (GlobalGame.Instance.difficulty == "Insane")
             SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
-        }
     }
 }
