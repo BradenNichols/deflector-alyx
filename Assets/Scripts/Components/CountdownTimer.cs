@@ -31,7 +31,7 @@ public class CountdownTimer : MonoBehaviour
     public bool isActive = false;
     public float timerSpeed = 1;
 
-    private Color baseColor;
+    public Color baseColor;
     private Color baseIconColor;
 
     private float colorTime = 0;

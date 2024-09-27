@@ -8,6 +8,11 @@ public class Clock : MonoBehaviour
     public Melee melee;
     public float timer;
 
+    [SerializeField]
+    private MovingPlatform platform;
+
+    private bool used = false;
+
     Transform scale;
     void Start()
     {
@@ -15,18 +20,26 @@ public class Clock : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (used) return;
+
         if(collision.name == "Player")
         {
+            used = true;
+
             CountdownTimer.initialTimer = timer;
+            CountdownTimer.baseColor = new Color(0.5f, 0, 0.5f);
             CountdownTimer.AddTime(CountdownTimer.initialTimer - CountdownTimer.timer);
             
             melee.canAttack = false;
+            platform.triggered = false;
 
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.7f);
+
+            //Destroy(gameObject);
         }
     }
     void Update()
     {
-        scale.localScale = Vector3.one * Mathf.Pow(Mathf.Sin(Time.time) + 5, 1.3f);
+        //scale.localScale = Vector3.one * Mathf.Pow(Mathf.Sin(Time.time) + 5, 1.3f);
     }
 }

@@ -24,6 +24,7 @@ public class MovingPlatform : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name == "Trigger")
