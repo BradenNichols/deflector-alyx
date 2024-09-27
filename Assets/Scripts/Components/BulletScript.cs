@@ -12,6 +12,8 @@ public class BulletScript : MonoBehaviour
     public bool shouldHitPlayers = true, deflecting = false;
     public float sunStart;
 
+    private float lifetime = 0;
+
     public TimeSlow timeSlow;
 
     private BoxCollider2D myCollider;
@@ -38,7 +40,6 @@ public class BulletScript : MonoBehaviour
         myCollider.enabled = true;
 
         transform.Translate(bulletOffset, Space.Self);
-        Destroy(gameObject, 4.5f);
     }
 
     // Hit Detect
@@ -78,6 +79,8 @@ public class BulletScript : MonoBehaviour
     // Deflect
     void Deflect()
     {
+        lifetime = 0;
+
         deflecting = true;
         sparks.Play();
         sching.Play();
@@ -114,5 +117,9 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         myBody.velocity = bulletDirection * bulletSpeed;
+        lifetime += Time.deltaTime;
+
+        if (lifetime >= 6)
+            Destroy(gameObject);
     }
 }
