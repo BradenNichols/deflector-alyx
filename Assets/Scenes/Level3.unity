@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1354709485811481409, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481419, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_Name
       value: PistolBullet
