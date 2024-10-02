@@ -56,12 +56,12 @@ public class EnemyAI : MonoBehaviour
             {
                 if (target.transform.position.x > transform.position.x) // right
                 {
-                    transform.localScale = new Vector3(size.x * -1, size.y, size.z);
+                    transform.localScale = size;
                     weaponGrip.transform.right = -(weaponGrip.transform.position - targetTransform.position);
                 }
                 else // left
                 {
-                    transform.localScale = size;
+                    transform.localScale = new Vector3(size.x * -1, size.y, size.z);
                     weaponGrip.transform.right = -(targetTransform.position - weaponGrip.transform.position);
                 }
             } else
