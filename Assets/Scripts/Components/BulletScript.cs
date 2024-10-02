@@ -113,6 +113,12 @@ public class BulletScript : MonoBehaviour
         deflecting = false;
     }
 
+    private void OnDestroy()
+    {
+        if (deflecting)
+            sun.intensity = sunStart;
+    }
+
     // Update is called once per frame
     void Update()
     {
