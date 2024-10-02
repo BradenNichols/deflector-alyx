@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
 
     public float minTimeToShoot = 0.1f;
     public float maxTimeToShoot = 0.5f;
+    public float bulletLightTime = 0.5f;
 
     public bool isShooting = false;
 
@@ -34,8 +35,8 @@ public class Gun : MonoBehaviour
         {
             bulletCooldown -= Time.fixedDeltaTime;
 
-            if (bulletCooldown < 0.5f)
-                light.intensity += (Time.fixedDeltaTime * 12);
+            if (bulletCooldown < bulletLightTime)
+                light.intensity += (Time.fixedDeltaTime * (12 * (0.5f / bulletLightTime)));
 
             return;
         }

@@ -9,9 +9,12 @@ public class EnemyAI : MonoBehaviour
 
     public float maxDetectionRange = 20f;
     public bool hasSeenPlayer = false;
+    public float bulletCooldownOnSeen = 0.6f;
+    public bool dontFlip = false;
 
     private Stats targetStats;
     private Transform targetTransform;
+    private Vector3 size;
 
     private Stats myStats;
     private Gun myGun;
@@ -21,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     {
         myStats = GetComponent<Stats>();
         myGun = myStats.gunWeapon;
+        size = transform.localScale;
 
         targetTransform = target.transform;
         targetStats = target.GetComponent<Stats>();
@@ -44,17 +48,24 @@ public class EnemyAI : MonoBehaviour
             if (cast.transform == targetTransform)
             {
                 hasSeenPlayer = true;
-                myGun.bulletCooldown = 0.6f;
+                myGun.bulletCooldown = bulletCooldownOnSeen;
             }
         } else
         {
-            if (target.transform.position.x > transform.position.x) // right
+            if (!dontFlip)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
-                weaponGrip.transform.right = -(weaponGrip.transform.position - targetTransform.position);
-            } else // left
+                if (target.transform.position.x > transform.position.x) // right
+                {
+                    transform.localScale = new Vector3(size.x * -1, size.y, size.z);
+                    weaponGrip.transform.right = -(weaponGrip.transform.position - targetTransform.position);
+                }
+                else // left
+                {
+                    transform.localScale = size;
+                    weaponGrip.transform.right = -(targetTransform.position - weaponGrip.transform.position);
+                }
+            } else
             {
-                transform.localScale = Vector3.one;
                 weaponGrip.transform.right = -(targetTransform.position - weaponGrip.transform.position);
             }
 
