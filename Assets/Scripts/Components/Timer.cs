@@ -15,9 +15,10 @@ public class Timer : MonoBehaviour
         myText = GetComponent<Text>();
 
         if (resetTimer == true)
-        {
             GlobalGame.Instance.timer = 0;
-        }
+
+        if (GlobalGame.Instance.difficulty == "Insane")
+            myText.color = Color.red;
 
         UpdateText();
     }
