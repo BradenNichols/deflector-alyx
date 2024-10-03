@@ -9,7 +9,6 @@ public class BulletScript : MonoBehaviour
     public int bulletSpeed = 1;
     public int bulletDamage = 5;
     public bool shouldHitPlayers = true, deflecting = false;
-    public float sunStart;
 
     private float lifetime = 0;
 
@@ -24,7 +23,6 @@ public class BulletScript : MonoBehaviour
 
     public Vector2 bulletDirection;
     public Vector3 bulletOffset;
-    public Light2D sun;
     public ParticleSystem sparks;
     public AudioSource sching;
     public Animator animator;
@@ -85,8 +83,6 @@ public class BulletScript : MonoBehaviour
         deflecting = true;
         sparks.Play();
         sching.Play();
-        sunStart = sun.intensity;
-        sun.intensity = 0.75f;
         shouldHitPlayers = false;
         bulletDirection *= -1;
         if (countdownTimer)
@@ -109,14 +105,7 @@ public class BulletScript : MonoBehaviour
     {
         yield return new WaitUntil(() => Time.timeScale == 1);
         bulletDirection = GetMouseDirection();
-        sun.intensity = sunStart;
         deflecting = false;
-    }
-
-    private void OnDestroy()
-    {
-        if (deflecting)
-            sun.intensity = sunStart;
     }
 
     // Update is called once per frame

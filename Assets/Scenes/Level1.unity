@@ -2714,6 +2714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5780746853413755130, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: sun
+      value: 
+      objectReference: {fileID: 1992183441}
     - target: {fileID: 5780746853413755131, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: target
       value: 
@@ -3656,18 +3660,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1905211837325906471, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905211837325906471, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905211837325906471, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1905211837325906471, guid: 7c21ad501b1c8834788399de5d681ead, type: 3}
       propertyPath: m_Enabled
       value: 1
