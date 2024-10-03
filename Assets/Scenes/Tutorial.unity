@@ -1417,7 +1417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.97845227, y: 1}
-  m_AnchoredPosition: {x: 9.3, y: -11.27}
+  m_AnchoredPosition: {x: 8.38, y: -11.27}
   m_SizeDelta: {x: 0.021547735, y: 0.000015258789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!102 &1028037877
@@ -1428,7 +1428,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028037875}
-  m_Text: Aim with your mouse.
+  m_Text: Bullets DEFLECT to your cursor.
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1441,7 +1441,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 1510014796
+    rgba: 3607166796
 --- !u!23 &1028037878
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1639,7 +1639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.97845227, y: 1}
-  m_AnchoredPosition: {x: 8.494, y: -10.798}
+  m_AnchoredPosition: {x: 8.38, y: -10.798}
   m_SizeDelta: {x: 0.021547735, y: 0.000015258789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!102 &1276313900
@@ -1650,7 +1650,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276313898}
-  m_Text: Deflect bullets with the Sword.
+  m_Text: Click to swing.
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1663,7 +1663,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278255538
+    rgba: 1979776946
 --- !u!23 &1276313901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2698,6 +2698,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1011915850}
+    - target: {fileID: 5768935074427136510, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletCooldownOnSeen
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5768935075279934498, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
