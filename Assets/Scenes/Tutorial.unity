@@ -249,8 +249,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96291815}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.65, y: -22.4931, z: 0}
-  m_LocalScale: {x: 5.4089317, y: 0.63516945, z: 1}
+  m_LocalPosition: {x: 34.1208, y: -22.36, z: 0}
+  m_LocalScale: {x: 1.9864709, y: 0.63516945, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -528,7 +528,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294181119
+    rgba: 4278255375
 --- !u!23 &202549794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1001,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.69
+      value: 34.120003
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2660,7 +2660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.66
+      value: 26.69
       objectReference: {fileID: 0}
     - target: {fileID: 5768935074427136509, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: m_LocalPosition.y
