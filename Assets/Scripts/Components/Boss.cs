@@ -14,6 +14,6 @@ public class Boss : MonoBehaviour
         camera.GetComponent<Camera>().orthographicSize = 9;
         healthBar.GetComponentInParent<Canvas>().gameObject.SetActive(true);
         healthBar.GetComponent<Image>().color = Color.gray;
-        Destroy(floor, 1.5f);
+        Destroy(floor, 2f);
     }
 }

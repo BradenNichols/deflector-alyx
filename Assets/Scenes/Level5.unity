@@ -828,9 +828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1615784442}
-  bossCanvas: {fileID: 600291099}
   sword: {fileID: 1701041025}
   boss: {fileID: 1684979063}
+  bossCanvas: {fileID: 600291099}
 --- !u!4 &486538865
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -423, y: -2}
+  m_AnchoredPosition: {x: -423, y: 18}
   m_SizeDelta: {x: 1398.67, y: 55.64}
   m_Pivot: {x: 0, y: -0.5}
 --- !u!114 &567738945
@@ -3122,7 +3122,7 @@ PrefabInstance:
       objectReference: {fileID: 239455572}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: fireTime
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: shootSound
@@ -3130,11 +3130,19 @@ PrefabInstance:
       objectReference: {fileID: 648759161}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: bulletspeed
-      value: 8
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletOffset.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
+      propertyPath: bulletOffset.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxTimeToShoot
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: minTimeToShoot
@@ -3369,7 +3377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237.22896, y: -269.38998}
+  m_AnchoredPosition: {x: -237.22896, y: -249.38995}
   m_SizeDelta: {x: 363.28, y: 27.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915994927

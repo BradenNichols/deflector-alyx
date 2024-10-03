@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BossTrigger : MonoBehaviour
 {
-    public new GameObject camera, bossCanvas;
+    public new GameObject camera;
     public Melee sword;
-    public GameObject boss;
+    public GameObject boss, bossCanvas;
 
     private bool active;
 
@@ -17,8 +17,8 @@ public class BossTrigger : MonoBehaviour
             active = true;
             sword.canAttack = true;
             bossCanvas.SetActive(true);
-            camera.GetComponent<CameraFollow>().offset = new Vector3(0, 0.8f, -2);
-            camera.GetComponent<Camera>().orthographicSize = 12;
+            camera.GetComponent<CameraFollow>().offset = new Vector3(0, 0.7f, -2);
+            camera.GetComponent<Camera>().orthographicSize = 13;
             boss.SetActive(true);
         }
     }
