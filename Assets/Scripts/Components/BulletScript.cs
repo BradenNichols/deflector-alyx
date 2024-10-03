@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using System.Diagnostics.Tracing;
 using UnityEngine.Rendering.Universal;
-using UnityEditor.Animations;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -29,7 +27,7 @@ public class BulletScript : MonoBehaviour
     public Light2D sun;
     public ParticleSystem sparks;
     public AudioSource sching;
-    public AnimatorController controller;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +80,7 @@ public class BulletScript : MonoBehaviour
     void Deflect()
     {
         lifetime = 0;
+        animator.SetBool("Deflect", true);
 
         deflecting = true;
         sparks.Play();
@@ -90,8 +89,6 @@ public class BulletScript : MonoBehaviour
         sun.intensity = 0.75f;
         shouldHitPlayers = false;
         bulletDirection *= -1;
-        GetComponent<Animator>().runtimeAnimatorController = controller;   
-
         if (countdownTimer)
             countdownTimer.OnDeflect();
 

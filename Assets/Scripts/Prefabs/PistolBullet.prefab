@@ -140,7 +140,7 @@ MonoBehaviour:
   sun: {fileID: 0}
   sparks: {fileID: 0}
   sching: {fileID: 7379578671585451517}
-  controller: {fileID: 9100000, guid: 0f0ba25ea1def2749997da6599496ba3, type: 2}
+  animator: {fileID: 5324544967035558142}
 --- !u!50 &1354709485811481408
 Rigidbody2D:
   serializedVersion: 4
@@ -347,7 +347,7 @@ Animator:
   m_GameObject: {fileID: 1354709485811481419}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ca9744ddfb9f16c4a930da6a1e2fefa8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0f0ba25ea1def2749997da6599496ba3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
