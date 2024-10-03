@@ -10,9 +10,7 @@ public class DeathBrick : MonoBehaviour
 
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
 
-        if (hitStats && hitStats.isPlayer == true && hitStats.isDead == false)
-        {
+        if (hitStats && !hitStats.isDead)
             hitStats.Kill();
-        }
     }
 }

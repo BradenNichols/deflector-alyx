@@ -4301,7 +4301,7 @@ GameObject:
   - component: {fileID: 1126697647}
   - component: {fileID: 1126697646}
   - component: {fileID: 1126697645}
-  - component: {fileID: 1126697644}
+  - component: {fileID: 1126697649}
   m_Layer: 0
   m_Name: StartPortal (1)
   m_TagString: Untagged
@@ -4309,22 +4309,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1126697644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126697643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32b9733d225df7409b48c3f19e52c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameControl: {fileID: 1615576308}
-  isActive: 1
-  sceneName: Level3
-  setDifficulty: 
 --- !u!50 &1126697645
 Rigidbody2D:
   serializedVersion: 4
@@ -4439,6 +4423,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1126697649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126697643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b53e93cfc7c5947adec5cdc5913328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!1 &1170886006
 GameObject:
   m_ObjectHideFlags: 0
