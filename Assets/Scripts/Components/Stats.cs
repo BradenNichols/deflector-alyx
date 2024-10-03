@@ -14,6 +14,11 @@ public class Stats : MonoBehaviour
     public bool dontSetColor = false;
     public bool oneHP = false;
 
+    [SerializeField]
+    private RectTransform bossBar;
+    private float bossBarSize;
+    private int baseHealth;
+
     [HideInInspector]
     public bool doNotRotate = false;
 
@@ -36,6 +41,11 @@ public class Stats : MonoBehaviour
     {
         mainCamera = GameObject.Find("MainCamera");
         gameControl = mainCamera.GetComponent<GameControl>();
+
+        baseHealth = health;
+
+        if (bossBar)
+            bossBarSize = bossBar.localScale.x;
 
         myRender = GetComponent<SpriteRenderer>();
         myBody = GetComponent<Rigidbody2D>();
@@ -69,6 +79,9 @@ public class Stats : MonoBehaviour
             myRender.color = new Color(1, 0.2f, 0);
             if(isPlayer) oneHP = true;
         }
+
+        if (bossBar)
+            bossBar.localScale = new Vector3(bossBarSize * (float)health / baseHealth, bossBar.localScale.y, bossBar.localScale.z);
     }
 
     public void TakeDamage(int dmg)

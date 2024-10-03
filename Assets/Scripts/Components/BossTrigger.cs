@@ -20,6 +20,9 @@ public class BossTrigger : MonoBehaviour
             camera.GetComponent<CameraFollow>().offset = new Vector3(0, 0.7f, -2);
             camera.GetComponent<Camera>().orthographicSize = 13;
             boss.SetActive(true);
+
+            if (GlobalGame.Instance.difficulty == "Insane")
+                boss.GetComponent<Stats>().health = 15;
         }
     }
 }

@@ -219,10 +219,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.754717, g: 0.06051977, b: 0.06051977, a: 1}
-    m_HighlightedColor: {r: 0.8773585, g: 0.27727836, b: 0.27727836, a: 1}
-    m_PressedColor: {r: 0.9622642, g: 0.049928807, b: 0.049928807, a: 1}
-    m_SelectedColor: {r: 0.9607844, g: 0.050980397, b: 0.050980397, a: 1}
+    m_NormalColor: {r: 0.5754717, g: 0.48046458, b: 0.48046458, a: 1}
+    m_HighlightedColor: {r: 0.7830189, g: 0.6685208, b: 0.6685208, a: 1}
+    m_PressedColor: {r: 0.8301887, g: 0.7322891, b: 0.7322891, a: 1}
+    m_SelectedColor: {r: 0.8962264, g: 0.76517445, b: 0.76517445, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -244,7 +244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3243328258932375105}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -896,6 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowSpeed: 0.1
+  sun: {fileID: 0}
   slowColor: {r: 0.8679245, g: 0.4913472, b: 0.18422928, a: 0}
 --- !u!114 &5780746853413755129
 MonoBehaviour:
@@ -1445,6 +1446,8 @@ MonoBehaviour:
   iconAddColor: {r: 0.40846384, g: 0.61442184, b: 0.6320754, a: 1}
   timer: 0
   isActive: 0
+  timerSpeed: 1
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &7626223816842485498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,7 +1686,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1746,7 +1749,7 @@ RectTransform:
   m_GameObject: {fileID: 8092988664036770992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 36.61, y: 47.49, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3964554175740230369}
@@ -1990,10 +1993,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.754717, g: 0.06051977, b: 0.06051977, a: 1}
-    m_HighlightedColor: {r: 0.8773585, g: 0.27727836, b: 0.27727836, a: 1}
-    m_PressedColor: {r: 0.9622642, g: 0.049928807, b: 0.049928807, a: 1}
-    m_SelectedColor: {r: 0.9607844, g: 0.050980397, b: 0.050980397, a: 1}
+    m_NormalColor: {r: 0.5754717, g: 0.48046458, b: 0.48046458, a: 1}
+    m_HighlightedColor: {r: 0.7830189, g: 0.6685208, b: 0.6685208, a: 1}
+    m_PressedColor: {r: 0.8301887, g: 0.7322891, b: 0.7322891, a: 1}
+    m_SelectedColor: {r: 0.8962264, g: 0.76517445, b: 0.76517445, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2124,10 +2127,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.754717, g: 0.06051977, b: 0.06051977, a: 1}
-    m_HighlightedColor: {r: 0.8773585, g: 0.27727836, b: 0.27727836, a: 1}
-    m_PressedColor: {r: 0.9622642, g: 0.049928807, b: 0.049928807, a: 1}
-    m_SelectedColor: {r: 0.9607844, g: 0.050980397, b: 0.050980397, a: 1}
+    m_NormalColor: {r: 0.5754717, g: 0.48046458, b: 0.48046458, a: 1}
+    m_HighlightedColor: {r: 0.7830189, g: 0.6685208, b: 0.6685208, a: 1}
+    m_PressedColor: {r: 0.8301887, g: 0.7322891, b: 0.7322891, a: 1}
+    m_SelectedColor: {r: 0.8962264, g: 0.76517445, b: 0.76517445, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2149,7 +2152,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3243328258932375105}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2258,7 +2261,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
