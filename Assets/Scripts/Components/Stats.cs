@@ -81,7 +81,7 @@ public class Stats : MonoBehaviour
         }
 
         if (bossBar)
-            bossBar.localScale = new Vector3(bossBarSize * (float)health / baseHealth, bossBar.localScale.y, bossBar.localScale.z);
+            bossBar.localScale = new Vector3(Mathf.Clamp(bossBarSize * (float)health / baseHealth, 0, bossBarSize), bossBar.localScale.y, bossBar.localScale.z);
     }
 
     public void TakeDamage(int dmg)
