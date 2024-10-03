@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4172315, y: 0.23}
   m_AnchorMax: {x: 0.58400005, y: 0.29000002}
-  m_AnchoredPosition: {x: -0.5, y: 48.000015}
+  m_AnchoredPosition: {x: -0.5, y: 63}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6315791632604469865
@@ -244,7 +244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3243328258932375105}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: Continue
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1483,8 +1483,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 134.4}
-  m_SizeDelta: {x: 250, y: 50}
+  m_AnchoredPosition: {x: 45, y: 181}
+  m_SizeDelta: {x: 516.81, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5472597221583365991
 CanvasRenderer:
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4284308974
-  m_fontColor: {r: 0.9339623, g: 0.36565503, b: 0.36565503, a: 1}
+  m_fontColor: {r: 0.8113208, g: 0.7692239, b: 0.7692239, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62
+  m_fontSize: 112.37
   m_fontSizeBase: 62
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -1931,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4172315, y: 0.37}
   m_AnchorMax: {x: 0.58400005, y: 0.43}
-  m_AnchoredPosition: {x: -0.5, y: 48.00001}
+  m_AnchoredPosition: {x: -0.5, y: 48.000015}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6169324385668058431
@@ -2065,7 +2065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4172315, y: 0.08800001}
   m_AnchorMax: {x: 0.58400005, y: 0.148}
-  m_AnchoredPosition: {x: -0.5, y: 46}
+  m_AnchoredPosition: {x: -0.5, y: 83}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &607512134213231849
@@ -2152,7 +2152,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3243328258932375105}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: Continue
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -2645,54 +2645,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 14967197085203743, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 83
-      objectReference: {fileID: 0}
     - target: {fileID: 1438265804777374771, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1519162473627907438, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 516.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 1519162473627907438, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1519162473627907438, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 181
       objectReference: {fileID: 0}
     - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: cc3c3cb724c7cae47a1e4f1916caccd4, type: 3}
-    - target: {fileID: 2661472821293831620, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 48.000015
-      objectReference: {fileID: 0}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 
       objectReference: {fileID: 3970835153037177366}
-    - target: {fileID: 3701101625478577617, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_fontSize
-      value: 112.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701101625478577617, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.7692239
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701101625478577617, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.7692239
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701101625478577617, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.8113208
-      objectReference: {fileID: 0}
     - target: {fileID: 3701101625478577617, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_fontSizeBase
       value: 112.37
@@ -2704,10 +2668,6 @@ PrefabInstance:
     - target: {fileID: 4297397077062820205, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404960981128383843, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 5776067007824155894, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: orthographic size
