@@ -3375,6 +3375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
+  ignoreEnemies: 1
 --- !u!50 &1366339099
 Rigidbody2D:
   serializedVersion: 4
