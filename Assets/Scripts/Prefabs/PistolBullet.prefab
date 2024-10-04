@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354709485811481423}
   - component: {fileID: 1354709485811481422}
-  - component: {fileID: 1354709485811481421}
+  - component: {fileID: 5090109143826428662}
   - component: {fileID: 1354709485811481420}
   - component: {fileID: 1354709485811481408}
   - component: {fileID: 1354709485811481409}
@@ -90,8 +90,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1354709485811481421
-BoxCollider2D:
+--- !u!58 &5090109143826428662
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,18 +104,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!114 &1354709485811481420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,12 +122,10 @@ MonoBehaviour:
   bulletDamage: 1
   shouldHitPlayers: 1
   deflecting: 0
-  sunStart: 0
   timeSlow: {fileID: 0}
   countdownTimer: {fileID: 0}
   bulletDirection: {x: 0, y: 0}
   bulletOffset: {x: 0, y: 0, z: 0}
-  sun: {fileID: 0}
   sparks: {fileID: 0}
   sching: {fileID: 7379578671585451517}
   animator: {fileID: 5324544967035558142}

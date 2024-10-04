@@ -510,6 +510,10 @@ PrefabInstance:
       propertyPath: countdownTimer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1354709485811481421, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481422, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_Enabled
       value: 0

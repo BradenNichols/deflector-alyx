@@ -5009,17 +5009,25 @@ PrefabInstance:
       propertyPath: countdownTimer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1354709485811481422, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1150364963, guid: 5390b6e897dddde4b9bc818b6f4f0aae, type: 3}
+    - target: {fileID: 1354709485811481422, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481423, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481423, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.27875
+      value: 127.496
       objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481423, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.44931
+      value: -7.509
       objectReference: {fileID: 0}
     - target: {fileID: 1354709485811481423, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5053,6 +5061,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5090109143826428662, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
@@ -5061,6 +5073,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1354709485811481419, guid: 914294ae9386b3e498531a86d62d9a4d, type: 3}
   m_PrefabInstance: {fileID: 2135034653}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &2135034663
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135034654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.007966735}
+  serializedVersion: 2
+  m_Radius: 0.23702091
 --- !u!1001 &3970835153037177363
 PrefabInstance:
   m_ObjectHideFlags: 0

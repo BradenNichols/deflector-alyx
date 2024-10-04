@@ -1,9 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Rendering.Universal;
 
-[RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(SpriteRenderer))]
 public class BulletScript : MonoBehaviour
 {
     public int bulletSpeed = 1;
@@ -14,7 +11,7 @@ public class BulletScript : MonoBehaviour
 
     public TimeSlow timeSlow;
 
-    private BoxCollider2D myCollider;
+    private CircleCollider2D myCollider;
     private SpriteRenderer mySprite;
     private Rigidbody2D myBody;
 
@@ -31,7 +28,7 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         mySprite = GetComponent<SpriteRenderer>();
-        myCollider = GetComponent<BoxCollider2D>();
+        myCollider = GetComponent<CircleCollider2D>();
         myBody = GetComponent<Rigidbody2D>();
 
         mySprite.enabled = true;
