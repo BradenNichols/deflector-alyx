@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
 
     public KeyCode jump;
+    public KeyCode jump2;
+    public KeyCode jump3;
     public KeyCode slam;
 
     public float slamForce;
@@ -48,13 +50,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Jump.
-        if (Input.GetKeyDown(jump) && collide2D.IsTouchingLayers())
+        if ((Input.GetKeyDown(jump) || Input.GetKeyDown(jump2) || Input.GetKeyDown(jump3)) && collide2D.IsTouchingLayers())
             body2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         // Slam
         if (Input.GetKey(slam))
             body2D.gravityScale = slamForce;
-        else if (Input.GetKey(jump) && canFeather == true)
+        else if ((Input.GetKey(jump) || Input.GetKey(jump2) || Input.GetKey(jump3)) && canFeather == true)
             body2D.gravityScale = featherForce;
         else
             body2D.gravityScale = defaultGravity;
