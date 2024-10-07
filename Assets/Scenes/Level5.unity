@@ -831,6 +831,7 @@ MonoBehaviour:
   sword: {fileID: 1701041025}
   boss: {fileID: 1684979063}
   bossCanvas: {fileID: 600291099}
+  fightMusic: {fileID: 8300000, guid: 5fe778aebfdf40f4cac7b9667844b814, type: 3}
 --- !u!4 &486538865
 Transform:
   m_ObjectHideFlags: 0

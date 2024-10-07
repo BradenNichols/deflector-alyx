@@ -7,6 +7,7 @@ public class BossTrigger : MonoBehaviour
     public new GameObject camera;
     public Melee sword;
     public GameObject boss, bossCanvas;
+    public AudioClip fightMusic;
 
     private bool active;
 
@@ -17,8 +18,12 @@ public class BossTrigger : MonoBehaviour
             active = true;
             sword.canAttack = true;
             bossCanvas.SetActive(true);
+
             camera.GetComponent<CameraFollow>().offset = new Vector3(0, 0.7f, -2);
             camera.GetComponent<Camera>().orthographicSize = 13;
+            camera.GetComponent<AudioSource>().clip = fightMusic;
+            camera.GetComponent<AudioSource>().Play();
+
             boss.SetActive(true);
 
             if (GlobalGame.Instance.difficulty == "Insane")

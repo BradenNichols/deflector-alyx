@@ -12,6 +12,8 @@ public class Boss : MonoBehaviour
     {
         camera.GetComponent<CameraFollow>().offset = new Vector3(0, -0.1f, -2);
         camera.GetComponent<Camera>().orthographicSize = 9;
+        camera.GetComponent<AudioSource>().mute = true;
+
         Destroy(floor, 2f);
     }
 }
