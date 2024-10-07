@@ -5,7 +5,7 @@ public class BulletScript : MonoBehaviour
 {
     public int bulletSpeed = 1;
     public int bulletDamage = 5;
-    public bool shouldHitPlayers = true, deflecting = false;
+    public bool shouldHitPlayers = true, deflecting = false, deflected = false;
 
     private float lifetime = 0;
 
@@ -57,7 +57,7 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "moving") Destroy(gameObject);
-        if (deflecting) return;
+        if (deflected) return;
 
         Melee hitMeleeWeapon = collision.gameObject.GetComponent<Melee>();
 
@@ -77,6 +77,7 @@ public class BulletScript : MonoBehaviour
         lifetime = 0;
         animator.SetBool("Deflect", true);
 
+        deflected = true;
         deflecting = true;
         sparks.Play();
         sching.Play();
