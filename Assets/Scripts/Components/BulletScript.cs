@@ -101,7 +101,7 @@ public class BulletScript : MonoBehaviour
 
     IEnumerator WaitUntilTimeScale()
     {
-        yield return new WaitUntil(() => Time.timeScale == timeSlow.defaultTimeScale);
+        yield return new WaitUntil(() => Time.timeScale == GlobalGame.Instance.defaultTimeScale);
         bulletDirection = GetMouseDirection();
         deflecting = false;
     }

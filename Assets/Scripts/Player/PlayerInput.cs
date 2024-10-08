@@ -6,7 +6,6 @@ public class PlayerInput : MonoBehaviour
     private Stats myStats;
     private PlayerMovement myMovement;
     private Melee myWeapon;
-    private TimeSlow myTime;
     public GameObject pauseMenu;
     public bool paused;
 
@@ -14,7 +13,6 @@ public class PlayerInput : MonoBehaviour
     {
         myStats = GetComponent<Stats>();
         myMovement = GetComponent<PlayerMovement>();
-        myTime = pauseMenu.GetComponentInParent<TimeSlow>();
         myWeapon = myStats.meleeWeapon;
     }
 
@@ -95,7 +93,7 @@ public class PlayerInput : MonoBehaviour
 
     void SetTime(float timeScale)
     {
-        myTime.defaultTimeScale = timeScale;
+        GlobalGame.Instance.defaultTimeScale = timeScale;
         Time.timeScale = timeScale;     
     }
 }

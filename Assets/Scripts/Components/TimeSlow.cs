@@ -6,7 +6,6 @@ using UnityEngine.Rendering.Universal;
 public class TimeSlow : MonoBehaviour
 {
     public float slowSpeed = 0.01f;
-    public float defaultTimeScale = 1.0f;
     public Light2D sun;
 
     private float sunIntensity;
@@ -23,7 +22,7 @@ public class TimeSlow : MonoBehaviour
         normalColor = myCamera.backgroundColor;
         sunIntensity = sun.intensity;
 
-        Time.timeScale = defaultTimeScale;
+        Time.timeScale = GlobalGame.Instance.defaultTimeScale;
     }
 
     public void AddTime(float length)
@@ -50,7 +49,7 @@ public class TimeSlow : MonoBehaviour
         {
             myCamera.backgroundColor = normalColor;
             sun.intensity = sunIntensity;
-            Time.timeScale = defaultTimeScale;
+            Time.timeScale = GlobalGame.Instance.defaultTimeScale;
         }
     }
 }

@@ -11,6 +11,7 @@ public class GlobalGame : MonoBehaviour
 
     public int normalHealth = 2;
     public int insaneHealth = 1;
+    public float defaultTimeScale = 1.0f;
     public float timer = 0;
 
     private void Awake()
