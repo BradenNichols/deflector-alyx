@@ -736,6 +736,10 @@ PrefabInstance:
       propertyPath: playerStats
       value: 
       objectReference: {fileID: 3970835153037177367}
+    - target: {fileID: 6685645186832771435, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: initialTimer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7020995516559647724, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_IsActive
       value: 1
