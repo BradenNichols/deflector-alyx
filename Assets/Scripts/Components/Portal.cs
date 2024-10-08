@@ -32,7 +32,6 @@ public class Portal : MonoBehaviour
 
         Stats hitStats = collision.gameObject.GetComponentInParent<Stats>();
 
-            print(collision);
         if (hitStats && hitStats.isPlayer == true && hitStats.isDead == false)
         {
             if (setDifficulty != "")
