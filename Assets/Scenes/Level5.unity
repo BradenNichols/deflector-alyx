@@ -3160,7 +3160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: bulletOffset.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: maxTimeToShoot
