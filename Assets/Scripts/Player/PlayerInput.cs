@@ -88,6 +88,8 @@ public class PlayerInput : MonoBehaviour
                 SetTime(8);
             if (Input.GetKeyDown(KeyCode.Keypad9))
                 SetTime(9);
+            if (Input.GetKeyDown(KeyCode.Keypad0))
+                SetTime(100);
         }
     }
 
