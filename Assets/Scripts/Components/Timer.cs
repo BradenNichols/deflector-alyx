@@ -29,9 +29,7 @@ public class Timer : MonoBehaviour
         string seconds = (GlobalGame.Instance.timer % 60).ToString("F2");
 
         if (seconds.Length == 4)
-        {
             seconds = "0" + seconds;
-        }
 
         myText.text = minutes + ":" + seconds;
     }
