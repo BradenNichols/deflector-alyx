@@ -7,6 +7,8 @@ public class PlayerInput : MonoBehaviour
     private PlayerMovement myMovement;
     private Melee myWeapon;
     public GameObject pauseMenu;
+
+    public bool canPause;
     public bool paused;
 
     void Start()
@@ -22,15 +24,20 @@ public class PlayerInput : MonoBehaviour
             myWeapon.Attack();
         if (Input.GetKeyDown(KeyCode.R) && Time.timeScale != 0)
             myStats.Kill();
-        if(Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape) && canPause)
         {
             if(!paused)
             {
                 Time.timeScale = 0;
+
+                pauseMenu.GetComponentInParent<AudioSource>().Pause();
                 pauseMenu.SetActive(true);
             } else
             {
                 Time.timeScale = 1;
+
+                pauseMenu.GetComponentInParent<AudioSource>().Play();
                 pauseMenu.SetActive(false);
             }
 

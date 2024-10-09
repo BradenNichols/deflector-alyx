@@ -12,6 +12,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void Continue()
     {
+        GetComponentInParent<AudioSource>().Play();
         gameObject.SetActive(false);
         input.paused = false;
         Time.timeScale = 1.0f;

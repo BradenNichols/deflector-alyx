@@ -1188,7 +1188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927462712}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 65.8146, y: -28.7, z: 0}
+  m_LocalPosition: {x: 65.8146, y: -28.38, z: 0}
   m_LocalScale: {x: 2.1029546, y: 35.203693, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1207,6 +1207,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_Pitch
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_Volume
+      value: 0.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848329648517108081, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8603c6101a12a5c479807dc272cee72f, type: 3}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 
@@ -1362,7 +1374,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bb220a210ab74be4a9d4d37e42ef3e1e, type: 3}
-  m_Color: {r: 0.8113208, g: 0.41714135, b: 0.5428031, a: 1}
+  m_Color: {r: 0.8773585, g: 0.56697226, b: 0.6643483, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2552,6 +2564,10 @@ PrefabInstance:
     - target: {fileID: 3970835153302471570, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
+      propertyPath: canPause
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471573, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_Enabled

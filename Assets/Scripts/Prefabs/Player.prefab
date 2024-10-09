@@ -487,6 +487,7 @@ MonoBehaviour:
   jumpForce: 9
   defaultGravity: 2
   canFeather: 1
+  coyoteTime: 0.1
 --- !u!50 &3970835153302471568
 Rigidbody2D:
   serializedVersion: 4
@@ -571,6 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  canPause: 1
   paused: 0
 --- !u!82 &2157547023670832951
 AudioSource:

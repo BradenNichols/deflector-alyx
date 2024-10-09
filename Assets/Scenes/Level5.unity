@@ -3152,7 +3152,7 @@ PrefabInstance:
       objectReference: {fileID: 648759161}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: bulletspeed
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5768935075402103783, guid: 03d52712b9aaedb418bb96c89b4e4b4f, type: 3}
       propertyPath: bulletOffset.x
