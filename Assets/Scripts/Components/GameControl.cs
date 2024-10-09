@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
-    public SpriteRenderer youDied;
-    public SpriteRenderer diedBG;
+    public Text youDied;
+    public Image diedBG;
 
     private AudioSource deathSound;
 
@@ -34,11 +35,12 @@ public class GameControl : MonoBehaviour
         deathSound.Play();
 
         int max = 35;
+        Color baseColor = youDied.color;
 
         for (int i = 0; i <= max; i++)
         {
             float ratio = (float)i / max;
-            youDied.color = new Color(1, 1, 1, ratio);
+            youDied.color = new Color(baseColor.r, baseColor.g, baseColor.b, ratio);
 
             if (ratio <= 0.42f)
                 diedBG.color = new Color(0, 0, 0, ratio);
@@ -46,21 +48,22 @@ public class GameControl : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
 
-        max = 150;
+        max = 175;
 
-        Vector3 baseSize = youDied.transform.localScale;
+        int baseTextSize = youDied.fontSize;
+        int textSizeIncrease = 31;
 
         for (int i = 0; i <= max; i++)
         {
-            float ratio = 1 - ((float)i / max);
+            float ratio = ((float)i / max);
 
-            youDied.color = new Color(ratio, ratio, ratio, 1);
-            youDied.transform.localScale = baseSize * (1 + ((float)i / max) / 8);
+            youDied.color = new Color(baseColor.r - ((baseColor.r / 2) * ratio), baseColor.g, baseColor.b, 1);
+            youDied.fontSize = baseTextSize + (int)(textSizeIncrease * ratio);
 
             yield return new WaitForSeconds(0.01f);
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.25f);
         deathSound.Stop();
 
         if (GlobalGame.Instance.difficulty == "Normal")

@@ -16,10 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     public float defaultGravity = 1;
     public bool canFeather = true;
+    public float coyoteTime = 0.1f;
 
     private Stats myStats;
     private Rigidbody2D body2D;
     private Collider2D collide2D;
+    private float timeSinceGrounded = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -49,9 +51,16 @@ public class PlayerMovement : MonoBehaviour
                 transform.rotation = new Quaternion(0, 0, 0, 0);
         }
 
+        if (collide2D.IsTouchingLayers())
+            timeSinceGrounded = 0;
+        else 
+            timeSinceGrounded += Time.deltaTime;
+
         // Jump.
-        if ((Input.GetKeyDown(jump) || Input.GetKeyDown(jump2) || Input.GetKeyDown(jump3)) && collide2D.IsTouchingLayers())
-            body2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        if (timeSinceGrounded <= coyoteTime)
+            if ((Input.GetKeyDown(jump) || Input.GetKeyDown(jump2) || Input.GetKeyDown(jump3)))
+                body2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         // Slam
         if (Input.GetKey(slam))

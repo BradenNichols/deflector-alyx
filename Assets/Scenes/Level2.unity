@@ -3512,6 +3512,14 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2364c293b1140ba46ba0d72f3f9424e5, type: 3}
+    - target: {fileID: 2615856076271265169, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12.454834
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615856076271265169, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3243328258932375105, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: input
       value: 
