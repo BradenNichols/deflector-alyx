@@ -35,7 +35,7 @@ public class PlayerInput : MonoBehaviour
                 pauseMenu.SetActive(true);
             } else
             {
-                Time.timeScale = 1;
+                Time.timeScale = GlobalGame.Instance.defaultTimeScale;
 
                 pauseMenu.GetComponentInParent<AudioSource>().Play();
                 pauseMenu.SetActive(false);

@@ -2856,11 +2856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5780746853413755078, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66.06
+      value: 69.82
       objectReference: {fileID: 0}
     - target: {fileID: 5780746853413755078, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.06
+      value: -22.7
       objectReference: {fileID: 0}
     - target: {fileID: 5780746853413755078, guid: c2e57fe32e52ddf4c8454b52722e5b73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3754,10 +3754,6 @@ PrefabInstance:
       propertyPath: swingSound
       value: 
       objectReference: {fileID: 1471114259}
-    - target: {fileID: 3970835153091019090, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3970835153302471532, guid: 1e6c65e97d155d242a35fd8e1af96be5, type: 3}
       propertyPath: m_Name
       value: Player
