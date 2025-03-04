@@ -1,4 +1,4 @@
-# deflector
-"the best game of all time"
+# deflector: alyx
+"the bestest game of all time" - derek
 
-Play here: https://boogameow.itch.io/deflector
+Play here: https://i-dawn-i.itch.io/deflector-alyx
